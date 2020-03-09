@@ -11,6 +11,16 @@ import Foundation
 
 struct SocialData : Decodable{
     var datas:[SocialPost]
+    var total:Int
+    var hasMore:Bool
+    var currentPage:Int
+    
+    enum CodingKeys: String, CodingKey {
+        case datas = "datas"
+        case total = "total"
+        case hasMore = "has_more"
+        case currentPage = "current_page"
+    }
 }
 
 struct SocialPost : Decodable {
