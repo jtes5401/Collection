@@ -17,6 +17,7 @@
 		EE12B8C6241678AF00B6955C /* CollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8C5241678AF00B6955C /* CollectionUITests.swift */; };
 		EE12B8D424167A7000B6955C /* SocialConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8D324167A7000B6955C /* SocialConnection.swift */; };
 		EE12B8D624167B4A00B6955C /* SocialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8D524167B4A00B6955C /* SocialType.swift */; };
+		EE12B8D82416984000B6955C /* ViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8D72416984000B6955C /* ViewControllerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		EE12B8C7241678AF00B6955C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE12B8D324167A7000B6955C /* SocialConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialConnection.swift; sourceTree = "<group>"; };
 		EE12B8D524167B4A00B6955C /* SocialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialType.swift; sourceTree = "<group>"; };
+		EE12B8D72416984000B6955C /* ViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EE12B8A3241678AC00B6955C /* AppDelegate.swift */,
 				EE12B8A5241678AC00B6955C /* SceneDelegate.swift */,
 				EE12B8A7241678AC00B6955C /* ViewController.swift */,
+				EE12B8D72416984000B6955C /* ViewControllerModel.swift */,
 				EE12B8A9241678AC00B6955C /* Main.storyboard */,
 				EE12B8AC241678AF00B6955C /* Assets.xcassets */,
 				EE12B8AE241678AF00B6955C /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			files = (
 				EE12B8D624167B4A00B6955C /* SocialType.swift in Sources */,
 				EE12B8A8241678AC00B6955C /* ViewController.swift in Sources */,
+				EE12B8D82416984000B6955C /* ViewControllerModel.swift in Sources */,
 				EE12B8A4241678AC00B6955C /* AppDelegate.swift in Sources */,
 				EE12B8A6241678AC00B6955C /* SceneDelegate.swift in Sources */,
 				EE12B8D424167A7000B6955C /* SocialConnection.swift in Sources */,
