@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias Handler = (_ data:[SocialPost]?,_ isSucc:Bool)->Void
+typealias Handler = (_ data:SocialData?,_ isSucc:Bool)->Void
 
 class SocialConnection: NSObject {
     
@@ -35,7 +35,7 @@ class SocialConnection: NSObject {
             }
             do {
                 let result = try self.decoder.decode(SocialData.self, from: d)
-                callBack?(result.datas,true)
+                callBack?(result,true)
                 return
             } catch let e as Error  {
                 print("Error:",e)
