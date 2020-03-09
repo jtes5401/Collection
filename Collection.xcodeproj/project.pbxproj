@@ -15,6 +15,7 @@
 		EE12B8B0241678AF00B6955C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE12B8AE241678AF00B6955C /* LaunchScreen.storyboard */; };
 		EE12B8BB241678AF00B6955C /* CollectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8BA241678AF00B6955C /* CollectionTests.swift */; };
 		EE12B8C6241678AF00B6955C /* CollectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8C5241678AF00B6955C /* CollectionUITests.swift */; };
+		EE12B8D624167B4A00B6955C /* SocialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE12B8D524167B4A00B6955C /* SocialType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EE12B8C1241678AF00B6955C /* CollectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE12B8C5241678AF00B6955C /* CollectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionUITests.swift; sourceTree = "<group>"; };
 		EE12B8C7241678AF00B6955C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE12B8D524167B4A00B6955C /* SocialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EE12B8AC241678AF00B6955C /* Assets.xcassets */,
 				EE12B8AE241678AF00B6955C /* LaunchScreen.storyboard */,
 				EE12B8B1241678AF00B6955C /* Info.plist */,
+				EE12B8D524167B4A00B6955C /* SocialType.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE12B8D624167B4A00B6955C /* SocialType.swift in Sources */,
 				EE12B8A8241678AC00B6955C /* ViewController.swift in Sources */,
 				EE12B8A4241678AC00B6955C /* AppDelegate.swift in Sources */,
 				EE12B8A6241678AC00B6955C /* SceneDelegate.swift in Sources */,
