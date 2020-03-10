@@ -19,9 +19,16 @@ class CollectionTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testConnection() {
+        let excep = XCTestExpectation(description: "Download data")
+        
+        SocialConnection().requestSocialPosts(limit: 222, pageNum: 1) { (posts, r) in
+            assert(r, "Result err")
+            print(posts)
+            excep.fulfill()
+        }
+        
+        wait(for: [excep], timeout: 10.0)
     }
 
     func testPerformanceExample() {
