@@ -78,3 +78,10 @@ extension ViewController : PinterestLayoutDelegate {
     }
 }
 
+extension ViewController : UICollectionViewDelegate {    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row >= model.postData.count - 1 {
+            model.updatePostData()
+        }
+    }
+}
