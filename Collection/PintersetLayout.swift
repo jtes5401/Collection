@@ -14,7 +14,7 @@ class PintersetLayout: UICollectionViewLayout {
     var delegate: PinterestLayoutDelegate!
 
     fileprivate var numberOfColumns = 2
-    fileprivate var cellPadding: CGFloat = 1
+    fileprivate var cellPadding: CGFloat = 10
     
     fileprivate var cache = [UICollectionViewLayoutAttributes]()
     

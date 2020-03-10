@@ -73,8 +73,13 @@ extension ViewController : PinterestLayoutDelegate {
         
         let adSize = label.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
         
-        let height = (width / CGFloat(m.cover.width / m.cover.height)) + 57 + adSize.height
-        return height
+        let cWidth = m.cover.width > 0 ? m.cover.width : Float(width)
+        let cHeight = m.cover.height > 0 ? m.cover.height : 1
+        let coverHeight = (width / CGFloat(cWidth / cHeight))
+        let detailHeight = 57 + adSize.height
+        let finalSize = CGSize(width: width, height: coverHeight + detailHeight)
+        print("collectionViewLayout: \(indexPath) - \(finalSize)")
+        return finalSize.height
     }
 }
 
