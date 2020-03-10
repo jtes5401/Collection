@@ -63,7 +63,7 @@
 		EE12B8D924169D6600B6955C /* ViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE12B8E02416B96F00B6955C /* PintersetLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PintersetLayout.swift; sourceTree = "<group>"; };
 		EE12B8E424173A9600B6955C /* ObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
-		EE12B8E9241809A700B6955C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EE12B8E9241809A700B6955C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
