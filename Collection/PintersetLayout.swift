@@ -34,10 +34,14 @@ class PintersetLayout: UICollectionViewLayout {
     }
     
     override func prepare() {
-         
-        guard cache.isEmpty == true, let collectionView = collectionView else {
+        
+        guard let collectionView = collectionView else {
             return
         }
+         
+//        guard cache.isEmpty == true, let collectionView = collectionView else {
+//            return
+//        }
          
         let columnWidth = contentWidth / CGFloat(numberOfColumns)
         var xOffset = [CGFloat]()
