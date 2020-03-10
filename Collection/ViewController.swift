@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         model.onUpdate = onUpdate(isFinish:)
         
+        if let layout = collectionView.collectionViewLayout as? PintersetLayout{
+            layout.delegate = self
+            layout.cellPadding = 10
+        }
 
     }
     
@@ -32,8 +36,8 @@ class ViewController: UIViewController {
         if isFinish {
             collectionView.reloadData()
         }
-}
     }
+}
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -55,6 +59,23 @@ extension ViewController: UICollectionViewDataSource {
         
         return cell
     }
+}
 
+extension ViewController : PinterestLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        let width = (collectionView.frame.size.width - 30) / 2
+        
+        let m = model.postData[indexPath.row]
+        
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 17.0)
+        label.numberOfLines = 30
+        label.text = m.title
+        
+        let adSize = label.sizeThatFits(CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
+        
+        let height = (width / CGFloat(m.cover.width / m.cover.height)) + 57 + adSize.height
+        return height
+    }
 }
 
