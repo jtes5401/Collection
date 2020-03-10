@@ -50,7 +50,7 @@ extension ViewController: UICollectionViewDataSource {
             let m = model.postData[indexPath.row]
             c.titleLabel.text = m.title
             c.nameLabel.text = m.user.name
-            c.coverImageView.sd_setImage(with: m.cover.url, completed: nil)
+            c.coverImageView.sd_setImage(with: m.cover.url)
             c.userCoverImageView.sd_setImage(with: m.user.cover, placeholderImage: UIImage(systemName: "person.crop.circle"))
             
             c.likesLabel.text = "\(m.likes)"

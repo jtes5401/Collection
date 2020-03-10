@@ -21,6 +21,6 @@ class ViewCollectionViewCell: UICollectionViewCell {
         coverImageView.image = nil
         titleLabel.text = nil
         nameLabel.text = nil
-        userCoverImageView.image = UIImage(named: "person.crop.circle")
+        userCoverImageView.image = nil
     }
 }
