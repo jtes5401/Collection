@@ -18,12 +18,14 @@ class ViewControllerModel {
     private var noMore = false
     private var connect = SocialConnection()
     
+    private var flag = DispatchSemaphore(value: 1)
     
     func updatePostData() {
         if noMore {
             return
         }
         
+        flag.wait()
         onUpdate?(false)
         connect.requestSocialPosts(limit: count, pageNum: current) { [unowned self] (data, result) in
             if result,let d = data {
@@ -31,6 +33,7 @@ class ViewControllerModel {
                 self.noMore = !d.hasMore
                 self.current = d.currentPage+1
             }
+            self.flag.signal()
             DispatchQueue.main.async {
                 self.onUpdate?(true)
             }
