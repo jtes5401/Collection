@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         
         if let layout = collectionView.collectionViewLayout as? PintersetLayout{
             layout.delegate = self
-            layout.cellPadding = 10
         }
 
     }
@@ -41,7 +40,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        model.postData.count
+        return model.postData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
