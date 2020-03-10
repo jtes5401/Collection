@@ -49,7 +49,19 @@ struct SocialUser : Decodable {
 }
 
 struct SocialCover : Decodable {
-    var url:URL
+    var url:URL?
     var width:Float
     var height:Float
+    enum CodingKeys: String, CodingKey {
+        case url = "url"
+        case width = "width"
+        case height =  "height"
+    }
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        let urlString = try values.decode(String.self, forKey: .url)
+        url = URL(string: urlString)
+        width = try values.decode(Float.self, forKey: .width)
+        height = try values.decode(Float.self, forKey: .height)
+    }
 }
