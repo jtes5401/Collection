@@ -51,7 +51,12 @@ extension ViewController: UICollectionViewDataSource {
             c.titleLabel.text = m.title
             c.nameLabel.text = m.user.name
             c.coverImageView.sd_setImage(with: m.cover.url)
-            c.userCoverImageView.sd_setImage(with: m.user.cover, placeholderImage: UIImage(systemName: "person.crop.circle"))
+            let image = UIImage(systemName: "person.crop.circle")
+            if let cURL = m.user.cover {
+                c.userCoverImageView.sd_setImage(with: cURL, placeholderImage: image)
+            }else {
+                c.userCoverImageView.image = image
+            }
             
             c.likesLabel.text = "\(m.likes)"
         }
